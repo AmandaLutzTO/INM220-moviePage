@@ -1,0 +1,56 @@
+----- FONTS -----------------------------------------------------
+default text = Helvetica, Arial, sans-serif
+headings, main navigation, pagination = Dosis, Helvetica, Arial, sans-serif
+
+
+----- FONT SIZES ------------------------------------------------
+default text = 14px
+h1 = 48px
+h2 = 24px
+h3 = 18px
+h4 = 18px
+h6 = 18px
+main navigation = 14px
+movie genres = 12px
+pagination = 15px
+
+
+----- COLOURS ---------------------------------------------------
+
+page background = #020d18
+footer background = #0f1c27
+
+default text = #abb7c4
+headings = #fff
+default links = #abb7c4
+default link hover = #dcf836
+main navigation = #abb7c4
+pagination = #2a6496
+movie genres links = #fff
+movie genres link hover = #fff
+Spotlight Celebrities links = #fff
+
+accent yellow text = #dcf836
+accent blue text = #2a6496
+accent red text = #dd003f
+
+movie genre tags
+Action (yellow) = #f5b50a
+Adventure (orange) = #ec5a1a
+Animation (red) = #dd003f
+Comedy (green) = #a6bb16
+Family (red) = #dd003f
+Fantasy (red) = #dd003f
+Science Fiction (red) = #dd003f
+
+
+----- POSTER STYLES ---------------------------------------------
+give all movie posters opacity = 0.6
+
+
+----- SIDEBAR HEADINGS ------------------------------------------
+margin top = 15px
+margin bottom = 30px
+border bottom = solid line of 1px in #405266;
+padding bottom = 20px
+line hight = 40px

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Movie Page</title>
+    <!-- load the css reset //-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <!-- bring in google fonts //-->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" />
+    <!-- styling for this site //-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <a name="top"></a>
+    <!-- TODO background image = images/slider-bg.jpg, background position = bottom center //-->
+    <!-- TODO 1px border at bottom = #868b8f //-->
+    <div id="header">
+      <!-- TODO maximum width = 1140px, horizontally centered on the page //-->
+      <div class="content-wrapper">
+
+        <!-- TODO space around logo and nav = 20px above, 25px below //-->
+        <!-- TODO display = flex, align-items = center (to vertically center flex-items below) //-->
+        <header>
+          <!-- because parent is flex, this will automatically display as flex-item //-->
+          <div id="logo">
+            <h1>
+              <!-- TODO background image = images/logo-moviepage.png, apply a large negative text indent to 'remove' content //-->
+              <a href="">Movie Page</a>
+            </h1>
+          </div>
+
+          <!-- because parent is flex, this will automatically display as flex-item //-->
+          <!-- TODO have 60px between logo and main nav (take into account padding around first nav item) //-->
+          <nav>
+            <!--
+              TODO create unordered list for main <nav>
+              include links for Home, Movies, TV Shows, Celebrities, News
+              give the link for Home a class to indicate it is the current page, make it 'accent yellow text' from style-guide.txt
+            </nav>
+            //-->
+            <!-- TODO display nav items in a row //-->
+            <!-- TODO padding around each nav item link = 15px to sides, 20px above and below //-->
+            <ul>
+              <!-- display nav items in a row //-->
+              <li><a href="" class="active">Home</a></li>
+              <li><a href="">Movies</a></li>
+              <li><a href="">TV Shows</a></li>
+              <li><a href="">Celebrities</a></li>
+              <li><a href="">News</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- TODO display = flex, justify-content = space-between //-->
+        <!-- TODO space above featured movies = 75px each (take into account space from header) //-->
+        <!-- TODO space below featured movies = 150px each //-->
+        <div id="featured-movies">
+          <!--
+            TODO give a width to the boxes that totals to less than 100% eg 24%
+            remaining width of 4% (eg 24 x 4 = 96%) will be used to create the space between the boxes and simulate margins
+            no need to remove margins on the first and last child!
+          //-->
+          <section class="feature-movie">
+            <!-- TODO border radius = 5px //-->
+            <!-- TODO make sure the image doesn't go over but also takes up full width //-->
+            <div class="movie-thumb">
+              <a href=""><img src="images/early-man-300x450.jpg" alt="Early Man" /></a>
+            </div>
+            <!-- TODO make the content float on top of the thumbnail image at the bottom //-->
+            <div class="movie-content">
+              <!-- TODO for left, top and right: padding = 10px //-->
+              <div class="movie-genres">
+                <!-- TODO use style-guide.txt to style span within genre links //-->
+                <a href=""><span class="adventure">Adventure</span></a>
+                <a href=""><span class="animation">Animation</span></a>
+                <a href=""><span class="comedy">Comedy</span></a>
+                <a href=""><span class="family">Family</span></a>
+                <a href=""><span class="family">Family</span></a>
+              </div>
+                <!-- TODO padding = 10px //-->
+              <h6 class="mv-title"><a href="">Early Man</a></h6>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section class="feature-movie">
+            <div class="movie-thumb">
+              <a href=""><img src="images/ant-man-wasp-300x450.jpg" alt="Ant-Man and the Wasp" /></a>
+            </div>
+            <div class="movie-content">
+              <div class="movie-genres">
+                <a href=""><span class="action">Action</span></a>
+                <a href=""><span class="adventure">Adventure</span></a>
+                <a href=""><span class="comedy">Comedy</span></a>
+                <a href=""><span class="fantasy">Fantasy</span></a>
+                <a href=""><span class="science-fiction">Science Fiction</span></a>
+              </div>
+              <h6 class="mv-title"><a href="">Ant-Man and the Wasp</a></h6>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section class="feature-movie">
+            <div class="movie-thumb">
+              <a href=""><img src="images/ready-player-one-300x450.jpg" alt="Ready Player One" /></a>
+            </div>
+            <div class="movie-content">
+              <div class="movie-genres">
+                <a href=""><span class="adventure">Adventure</span></a>
+                <a href=""><span class="fantasy">Fantasy</span></a>
+                <a href=""><span class="science-fiction">Science Fiction</span></a>
+              </div>
+              <h6 class="mv-title"><a href="">Ready Player One</a></h6>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section class="feature-movie">
+            <div class="movie-thumb">
+              <a href=""><img src="images/aquaman-200x300.jpg" alt="Aquaman" /></a>
+            </div>
+            <div class="movie-content">
+              <div class="movie-genres">
+                <a href=""><span class="action">Action</span></a>
+                <a href=""><span class="fantasy">Fantasy</span></a>
+                <a href=""><span class="science-fiction">Science Fiction</span></a>
+              </div>
+              <h6 class="mv-title"><a href="">Aquaman</a></h6>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- TODO repeat class to get maximum width (1140px) and horizontally centered //-->
+    <!-- TODO display = flex, justify-content = space-between //-->
+    <!-- TODO space above = 100px //-->
+    <main class="content-wrapper">
+      <!-- because parent is flex, this will automatically display as flex-item //-->
+      <!-- TODO set width to 65% //-->
+      <div id="main-content">
+        <div id="in-theatre" class="content-section">
+          <h2>In Theatre</h2>
+
+          <!-- TODO display = flex, justify-content = space-between //-->
+          <div id="theatre-wrapper">
+            <!--
+              TODO give a width to the boxes that totals to less than 100% eg 23%
+              remaining width of 8% (eg 23 x 4 = 92%) will be used to create the space between the boxes and simulate margins
+              no need to remove margins on the first and last child!
+            //-->
+            <section class="in-theatre">
+              <!-- TODO as with images above: border radius = 5px, make sure the image fits //-->
+              <div class="movie-thumb">
+                <a href=""><img src="images/the-avengers-280x395.jpg" alt="The Avengers" /></a>
+              </div>
+              <!-- TODO make the content float on top of the thumbnail image at the bottom //-->
+              <div class="movie-content">
+                <!-- TODO padding = 10px, font size = 13px //-->
+                <!-- TODO search online for how to show ellipsis when text is too long //-->
+                <h6 class="mv-title"><a href="">The Avengers</a></h6>
+              </div>
+            </section>
+
+            <!-- TODO repeat class names from above //-->
+            <section class="in-theatre">
+              <div class="movie-thumb">
+                <a href=""><img src="images/mission-impossible-fallout-280x395.jpg" alt="Mission: Impossible – Fallout" /></a>
+              </div>
+              <div class="movie-content">
+                <h6 class="mv-title"><a href="">Mission: Impossible – Fallout</a></h6>
+              </div>
+            </section>
+
+            <!-- TODO repeat class names from above //-->
+            <section class="in-theatre">
+              <div class="movie-thumb">
+                <a href=""><img src="images/thor-280x395.jpg" alt="Thor" /></a>
+              </div>
+              <div class="movie-content">
+                <h6 class="mv-title"><a href="">Thor</a></h6>
+              </div>
+            </section>
+
+            <!-- TODO repeat class names from above //-->
+            <section class="in-theatre">
+              <div class="movie-thumb">
+                <a href=""><img src="images/ant-man-and-the-wasp-280x395.jpg" alt="Ant-Man and the Wasp" /></a>
+              </div>
+              <div class="movie-content">
+                <h6 class="mv-title"><a href="">Ant-Man and the Wasp</a></h6>
+              </div>
+            </section>
+          </div>
+
+          <!-- TODO space above = 40px //-->
+          <!-- TODO style according to style-guide.txt //-->
+          <nav class="pagination">
+            <ul>
+              <li><a href="" class="active">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="latest-news" class="content-section">
+          <h2>Latest News</h2>
+
+          <!-- TODO give h3 in this section top/bottom space = 20px, line height = 20px //-->
+          <!-- TODO give paragraphes in this section bottom space = 30px, line height = 28px //-->
+          <section class="latest-news-item">
+            <h3><a href="">New DVD Release: When To Buy The Latest Movies In October 2018</a></h3>
+            <p class="date">2018-09-27</p>
+            <p>Beyond the usual forays to apple orchards and pumpkin patches and the popular pastime of giving kids candy that will rot their teeth, October has a lot going for it on the home entertainment front.</p>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section class="latest-news-item">
+            <h3><a href="">JK Rowling Claps Back After Nagini Controversy For Fantastic Beasts 2</a></h3>
+            <p class="date">2018-09-27</p>
+            <p><i>Fantastic Beasts: Crimes of Grindelwald</i> will feature a human Nagini, and some fans aren't happy about it.</p>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section class="latest-news-item">
+            <h3><a href="">Arnold Schwarzenegger’s Photo With Linda Hamilton On Terminator 6 Set Will Warm Your Heart</a></h3>
+            <p class="date">2018-09-27</p>
+            <p>Fans are eager to see the dynamic duo reunite, and now Schwarzenegger has shared an image from the set that is sure to give you all the feelings.</p>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section class="latest-news-item">
+            <h3><a href="">Star Wars’ Poe Dameron Is Getting A Promotion Ahead Of Episode IX</a></h3>
+            <p class="date">2018-09-27</p>
+            <p>Poe Dameron had one of the more interesting character arcs in <i>Star Wars: The Last Jedi</i>, and based on some new information, it appears he truly has learned from his mistakes.</p>
+          </section>
+        </div>
+      </div> <!-- end of #main-content //-->
+
+      <!-- because parent is flex, this will automatically display as flex-item //-->
+      <!-- TODO set width to 25% //-->
+      <div id="sidebar">
+        <!-- TODO space above = 100px //-->
+        <div class="widget">
+          <!-- TODO follow style-guide.txt for these headings //-->
+          <h4>Spotlight Celebrities</h4>
+
+          <!-- TODO display = flex, align-items = center (to vertically center flex-items below) //-->
+          <!-- TODO space below = 30px //-->
+          <section>
+            <!-- because parent is flex, this will automatically display as flex-item //-->
+            <div class="celeb-thumb">
+              <!-- TODO set celebrity images to width = 70px //-->
+              <!-- TODO border radius = 5px //-->
+              <a href=""><img src="images/abby-ryder-fortson.jpg" alt="Abby Ryder Fortson" />
+            </div>
+            <!-- because parent is flex, this will automatically display as flex-item //-->
+            <!-- TODO put 15px between image and name //-->
+            <div class="celeb-name">
+              <a href="">Abby Ryder Fortson</a>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section>
+            <div class="celeb-thumb">
+              <a href=""><img src="images/alec-baldwin.jpg" alt="Alec Baldwin" />
+            </div>
+            <div class="celeb-name">
+              <a href="">Alec Baldwin</a>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section>
+            <div class="celeb-thumb">
+              <a href=""><img src="images/alfre-woodard.jpg" alt="Alfre Woodard" />
+            </div>
+            <div class="celeb-name">
+              <a href="">Alfre Woodard</a>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section>
+            <div class="celeb-thumb">
+              <a href=""><img src="images/amber-heard.jpg" alt="Amber Heard" />
+            </div>
+            <div class="celeb-name">
+              <a href="">Amber Heard</a>
+            </div>
+          </section>
+
+          <p><a href="">See All Celebrities &gt;</a></p>
+        </div>
+
+        <!-- TODO space above = 100px //-->
+        <div class="widget">
+          <h4>Coming Soon</h4>
+
+          <!-- TODO display = flex, align-items = center (to vertically center flex-items below) //-->
+          <!-- TODO space below = 30px //-->
+          <section>
+            <!-- because parent is flex, this will automatically display as flex-item //-->
+            <div class="celeb-thumb">
+              <!-- TODO set celebrity images to width = 70px //-->
+              <!-- TODO border radius = 5px //-->
+              <a href=""><img src="images/captain-marvel.jpg" alt="Captain Marvel" />
+            </div>
+            <!-- because parent is flex, this will automatically display as flex-item //-->
+            <!-- TODO put 15px between image and name //-->
+            <div class="celeb-name">
+              <a href="">Captain Marvel</a>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section>
+            <div class="celeb-thumb">
+              <a href=""><img src="images/the-lego-movie2.jpg" alt="The Lego Movie 2: The Second Part" />
+            </div>
+            <div class="celeb-name">
+              <a href="">The Lego Movie 2: The Second Part</a>
+            </div>
+          </section>
+
+          <!-- TODO repeat class names from above //-->
+          <section>
+            <div class="celeb-thumb">
+              <a href=""><img src="images/glass.jpg" alt="Glass" />
+            </div>
+            <div class="celeb-name">
+              <a href="">Glass</a>
+            </div>
+          </section>
+
+          <p><a href="">See All Coming Soon &gt;</a></p>
+        </div>
+      </div> <!-- end of #sidebar //-->
+    </main>
+
+    <!-- TODO solid top border that's 2px wide of #1e2c3b //-->
+    <footer>
+      <!-- TODO repeat class to get maximum width (1140px) and horizontally centered //-->
+      <!-- TODO display = flex //-->
+      <!-- TODO space above & below = 20px //-->
+      <div class="content-wrapper">
+        <!-- because parent is flex, this will automatically display as flex-item //-->
+        <!-- TODO set flex = 1 so both parts of footer will be equal width //-->
+        <div id="copywrite">
+          &copy 2018. All Rights Reserved.
+        </div>
+
+        <!-- because parent is flex, this will automatically display as flex-item //-->
+        <!-- TODO set flex = 1 so both parts of footer will be equal width //-->
+        <div class="top-link">
+          <a href="#top">Back to Top</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
