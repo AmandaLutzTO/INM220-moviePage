@@ -1,8 +1,0 @@
-oringial idea
-based on http://haintheme.com/demo/wp/buster/
-
-student start
-https://htmlpreview.github.io/?https://github.com/AmandaLutzTO/INM220-moviePage/blob/startPoint/index.html
-
-finished 
-https://htmlpreview.github.io/?https://github.com/AmandaLutzTO/INM220-moviePage/blob/master/index.html
